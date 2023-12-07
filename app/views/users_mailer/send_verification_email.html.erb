@@ -1,0 +1,13 @@
+<p>Welcome to <%= @group[:expansion] || @group[:name] || 'EDO' %></p>
+
+<p>Thank you for registering with <%= @group[:expansion] || @group[:name] || 'EDO' %>. Please use this code <%= @user.code %> to verify your email address at <a href="<%= @url %>"><%= @url %></a>.</p>
+
+<p>You will soon have access to <%= @group[:expansion] || @group[:name] || 'EDO' %>, a unique Economic Development and Business Development platform for Buyers,
+  Suppliers and Economic Development Advocates to exchange information. Together, we are creating Win, Win, Win outcomes and empowering Local Communities.</p>
+
+<p>We would appreciate your feedback and support. We are listening and making changes everyday based on your feedback.</p>
+
+<p>We take information security seriously and we respect your privacy.</p>
+
+<p>If you have any concerns please feel free to contact us anytime at
+  <%= link_to "www.economx.com/contact-us", url_for("http://www.economx.com/contact-us"), target: "_blank", rel: "alternate" %>.</p>

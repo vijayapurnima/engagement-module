@@ -1,0 +1,5 @@
+<p>Dear <%= @user.name || 'Sir/Madam' %>,</p>
+
+<p>You have received a new <%= @comm_type %> from <%= @sender.name %>.</p>
+
+<p>Follow this <a href="<%= @url %>">link</a> to view this notice in <%= @group[:expansion] || @group[:name] || 'EDO' %> on the communications page.</p>

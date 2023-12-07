@@ -1,0 +1,11 @@
+<p>Dear <%= @user.name || 'Sir/Madam' %>,</p>
+
+<p>You're receiving this email, because someone has tried to register an account with this email address.</p>
+
+<p>As you have an existing account on <%= @group[:expansion] || @group[:name] || 'EDO' %>, you will not be able to use this email address to register.</p>
+
+<p>If you aren't sure of your <%= @group[:expansion] || @group[:name] || 'EDO' %> password, please use the Reset Password feature, available <a href="<%= @url %>">here</a>.</p>
+
+<p>We would appreciate your feedback and support. We are listening and making changes based on your feedback every day.</p>
+
+<p>Feel free to contact us anytime at <%= link_to "www.economx.com/contact-us", url_for("http://www.economx.com/contact-us"), target: "_blank", rel: "alternate" %>.</p>

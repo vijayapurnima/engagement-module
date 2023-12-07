@@ -1,0 +1,1 @@
+json.extract! group, :id, :group_id, :group_type
