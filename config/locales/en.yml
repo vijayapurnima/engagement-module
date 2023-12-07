@@ -1,0 +1,104 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+
+en:
+  unknown: "An error occured while processing your request. Please try again."
+  auth:
+    missing_credentials: "Username or password is not provided"
+    not_exists: "We can't find a matching user with the credentials provided"
+    invalid_credentials: "Incorrect username or password"
+    no_token: "User not logged in"
+    username_taken: "Username has already been taken"
+  user:
+    code_expired: "Sorry, the verification link has expired. Please create another link"
+    exists: "A user with the given email address already exists"
+    code_missing: "Verification code is missing"
+    not_exists: "User doesn't exist"
+    code_mismatch: "Verification code doesn't match"
+    unverified_user: "Your account has not been verified yet"
+    no_email: "Creating a user requires an email address to be provided"
+    email_invalid_domain: "Email requires valid domain"
+    password_required: "Password is required"
+    invalid_password: "Password is invalid"
+    reset_code: "Cannot reset code"
+    verified_user: "User with the email is already a verified"
+    feedback: "Cannot save feedback."
+    response_missing: "Response is not provided"
+    email_required: "Email is required"
+  organization:
+    get_error: "Unable to get Organization Details"
+    missing_identifier: "Organization ID is not provided"
+  edo:
+    get_error: "Unable to get EDO Details"
+    missing_identifier: "EDO ID is not provided"
+    members_get_error: "Cannot get EDO members"
+  group:
+    missing_identifier: "Group ID is not provided"
+    get_error: "Unable to get Group Details"
+  edo_membership:
+    users_missing: "EDO membership users missing"
+    edo_missing: "EDO missing for EDO membership"
+    create_error: "Unable to create EDO membership"
+  form:
+    get_error: "Unable to get Form Details"
+    missing_identifier: "Form ID is not provided"
+    user_not_provided: "Forms Service user not Provided"
+  attachment:
+    missing_identifier: "Attachment Id is required"
+    create_error: "Cannot create attachment"
+    destroy_error: "Cannot destroy attachment"
+    download_error: "Cannot download attachment"
+    file_too_large: "Attachment file is too large."
+    missing_details: "File,Attachment Type or Linked detail is missing"
+  comms:
+    create_error: "Cannot create comm"
+    update_error: "Cannot update comm"
+    get_error: "Cannot get comm"
+    destroy_error: "Cannot destroy comm"
+    send_error: "Cannot send comm"
+    notify_ecx_users: "Cannot notify Business Users"
+    missing_params: "Comms parameters are missing"
+    user_not_provided: "Comms User not provided"
+    missing_identifier: "Comm Id is required"
+  notification:
+    missing_params: "EDO_id,Notification ID or Notification Type is missing"
+    missing_identifier: "Notification Id is required"
+    edo_mismatch: "Notification EDO doesn't match with user's EDO"
+    duplicate: "Notification exists for the given context"
+  market_request:
+    missing_identifier: "MarketRequest Id is required"
+  project:
+    missing_identifier: "Project Id is required"
+    get_error: "Unable to get Project details"
+  lead:
+    missing_user: "Lead User doesn't exist"
+

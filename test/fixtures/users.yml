@@ -1,0 +1,79 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+two:
+  name: "sanju"
+  email: "sanju@tsbe.com"
+  status: "unverified"
+  user_type: "user"
+
+three:
+  name: "Sandeep"
+  email: "sandeep@tsbe.com"
+  verified: true
+  status: "active"
+  user_type: "user"
+
+four:
+  name: "purni"
+  email: "purni@gmail.com"
+  verified: true
+  status: "active"
+  code: "FRPZ6WG2"
+  code_created_at: <%= 1.month.from_now %>
+  user_type: "user"
+
+five:
+  name: "vijji"
+  email: "vijji@gmail.com"
+  user_type: "user"
+
+six:
+  name: "tittu"
+  email: "tittu@tsbe.com"
+  user_type: "user"
+  code: "FRPZ6WG7"
+  code_created_at: <%= 1.month.from_now %>
+
+seven:
+  name: "bittu"
+  email: "bittu@tsbe.com"
+  user_type: "user"
+  code: "FRPZ6WG5"
+  code_created_at: <%= 6.months.ago %>
+
+eight:
+  name: "kittu"
+  email: "kittu@tsbe.com"
+  user_type: "user"
+  code: "FRPZ6WG3"
+  code_created_at: <%= 1.month.from_now %>
+
+nine:
+  name: "sandy"
+  email: "sandy@tsbe.com"
+  verified: true
+  status: "active"
+  code_created_at: <%= 1.month.from_now %>
+  user_type: "user"
+  code: "FRPZ6WGA"
+
+ten:
+  name: "dvpurni"
+  email: "dvpurni@tsbe.com"
+  code: "FRPZ6WGB"
+  user_type: "user"
+  code_created_at: <%= 1.months.ago %>
+
+eleven:
+  name: "dvpurni"
+  email: "dvpurni@tsbe.com"
+  code: "FRPZ6WGC"
+  verified: true
+  status: "active"
+  code_created_at: <%=6.months.ago %>
+  user_type: "user"

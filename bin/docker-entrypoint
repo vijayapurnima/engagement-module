@@ -1,0 +1,21 @@
+#!/bin/bash -e
+
+# If running the rails server then create or migrate existing database
+if [ "${*}" == "./bin/rails server" ]; then
+
+  # Check if the database exists
+  if [ -z "$(./bin/rails db:version 2>/dev/null)" ]; then
+    echo "Creating database..."
+    ./bin/rails db:create
+    echo "Migrating database..."
+    ./bin/rails db:migrate
+
+    echo "Seeding data..."
+    ./bin/rails db:seed
+  else
+   echo "Migrating database..."
+   ./bin/rails db:migrate
+  fi
+fi
+
+exec "${@}"
